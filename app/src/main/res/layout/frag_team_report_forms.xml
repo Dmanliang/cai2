@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp">
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_search_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/whitebg_grayside_r5"
+            android:paddingStart="13dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_subordinate_agent_account"
+            app:inputBottomSpace="8dp"
+            app:inputLeftSpace="8dp"
+            app:labelIcon="@string/icon_search"
+            app:showUnderline="false" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bluebg_r5"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/search"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="20dp"
+                android:background="@color/light_red" />
+
+            <TextView
+                android:id="@+id/tv_who_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/who_team_report_forms"
+                android:textColor="@color/color_333" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_subordinate"
+                android:textColor="@color/light_red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/colon"
+                android:textColor="@color/light_red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_my_subordinate_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_red"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginStart="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <com.sp.xwjlibrary.widget.DoubleTextView
+                android:id="@+id/dtv_bet_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:drawableSpace="@drawable/divide_space_dm3"
+                app:oneColor="@color/color_333"
+                app:orientation="vertical"
+                app:twoSize="12"
+                app:twoText="@string/bet_money" />
+
+            <View style="@style/verticalLine" />
+
+            <com.sp.xwjlibrary.widget.DoubleTextView
+                android:id="@+id/dtv_prize_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:drawableSpace="@drawable/divide_space_dm3"
+                app:oneColor="@color/light_red"
+                app:orientation="vertical"
+                app:twoSize="12"
+                app:twoText="@string/prize_money" />
+
+            <View style="@style/verticalLine" />
+
+            <com.sp.xwjlibrary.widget.DoubleTextView
+                android:id="@+id/dtv_activity_cash_gift"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:drawableSpace="@drawable/divide_space_dm3"
+                app:oneColor="@color/light_red"
+                app:orientation="vertical"
+                app:twoSize="12"
+                app:twoText="@string/activity_cash_gift" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <com.sp.xwjlibrary.widget.DoubleTextView
+                android:id="@+id/dtv_team_return_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:drawableSpace="@drawable/divide_space_dm3"
+                app:dtvBgColor="@drawable/team_report_forms_blue"
+                app:oneColor="@android:color/white"
+                app:orientation="vertical"
+                app:twoColor="@android:color/white"
+                app:twoSize="12"
+                app:twoText="@string/team_return_commission" />
+
+            <com.sp.xwjlibrary.widget.DoubleTextView
+                android:id="@+id/dtv_team_profit_loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                app:drawableSpace="@drawable/divide_space_dm3"
+                app:dtvBgColor="@drawable/team_report_forms_red"
+                app:oneColor="@android:color/white"
+                app:orientation="vertical"
+                app:twoColor="@android:color/white"
+                app:twoSize="12"
+                app:twoText="@string/team_profit_loss" />
+
+            <com.sp.xwjlibrary.widget.DoubleTextView
+                android:id="@+id/dtv_return_point_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:drawableSpace="@drawable/divide_space_dm3"
+                app:dtvBgColor="@drawable/team_report_forms_yellow"
+                app:oneColor="@android:color/white"
+                app:orientation="vertical"
+                app:twoColor="@android:color/white"
+                app:twoSize="12"
+                app:twoText="@string/return_point_commission" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/team_profit_loss_calculate"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <com.sp.xwjlibrary.widget.DoubleTextView
+            android:id="@+id/dtv_recharge_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:drawableSpace="@drawable/divide_space_dm3"
+            app:oneColor="@color/color_333"
+            app:orientation="vertical"
+            app:twoSize="12"
+            app:twoText="@string/recharge_money" />
+
+        <View style="@style/verticalLine" />
+
+        <com.sp.xwjlibrary.widget.DoubleTextView
+            android:id="@+id/dtv_withdrawal_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:drawableSpace="@drawable/divide_space_dm3"
+            app:oneColor="@color/light_red"
+            app:orientation="vertical"
+            app:twoSize="12"
+            app:twoText="@string/withdrawal_money" />
+
+        <View style="@style/verticalLine" />
+
+        <com.sp.xwjlibrary.widget.DoubleTextView
+            android:id="@+id/dtv_team_surplus_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:drawableSpace="@drawable/divide_space_dm3"
+            app:oneColor="@color/light_red"
+            app:orientation="vertical"
+            app:twoSize="12"
+            app:twoText="@string/team_surplus_money" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <com.sp.xwjlibrary.widget.DoubleTextView
+            android:id="@+id/dtv_first_recharge_people"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:drawableSpace="@drawable/divide_space_dm3"
+            app:oneColor="@color/color_333"
+            app:orientation="vertical"
+            app:twoSize="12"
+            app:twoText="@string/first_recharge_people" />
+
+        <View style="@style/verticalLine" />
+
+        <com.sp.xwjlibrary.widget.DoubleTextView
+            android:id="@+id/dtv_register_people"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:drawableSpace="@drawable/divide_space_dm3"
+            app:oneColor="@color/color_333"
+            app:orientation="vertical"
+            app:twoSize="12"
+            app:twoText="@string/register_people" />
+
+        <View style="@style/verticalLine" />
+
+        <com.sp.xwjlibrary.widget.DoubleTextView
+            android:id="@+id/dtv_bet_people"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:drawableSpace="@drawable/divide_space_dm3"
+            app:oneColor="@color/color_333"
+            app:orientation="vertical"
+            app:twoSize="12"
+            app:twoText="@string/bet_people" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/team_report_forms_bottom_hint"
+        android:textColor="@color/color_333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_noun_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/noun_explain"
+        android:textColor="#3C97EB"
+        android:textSize="12sp" />
+</LinearLayout>

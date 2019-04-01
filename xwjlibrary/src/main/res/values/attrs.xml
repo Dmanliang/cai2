@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--图标清除编辑框-->
+    <declare-styleable name="IconEditClearView">
+        <attr name="inputBg" format="reference"/>
+        <attr name="showUnderline" format="boolean" />
+        <attr name="inputBottomSpace" format="dimension"/>
+        <attr name="inputLeftSpace" format="dimension"/>
+        <attr name="inputGravity">
+            <enum name="center" value="0"/>
+            <enum name="center_vertical" value="1"/>
+            <enum name="center_horizontal" value="2"/>
+            <enum name="left" value="3"/>
+            <enum name="top" value="4"/>
+            <enum name="right" value="5"/>
+            <enum name="bottom" value="6"/>
+        </attr>
+        <attr name="inputType" format="integer" >
+            <enum name="text" value="0"/>
+            <enum name="number" value="1"/>
+            <enum name="password" value="2"/>
+            <enum name="filter" value="3"/>
+            <enum name="numberDecimal" value="4"/>
+            <enum name="filterPsw" value="5"/>
+        </attr>
+        <attr name="filterChars" format="string" />
+        <attr name="text" format="string" />
+        <attr name="textSize" format="integer" />
+        <attr name="textColor" format="color" />
+        <attr name="singleLine" format="boolean" />
+        <attr name="lines" format="integer"/>
+        <attr name="maxLine" format="integer"/>
+        <attr name="maxLength" format="integer"/>
+        <attr name="hint" format="string" />
+        <attr name="hintColor" format="color" />
+        <attr name="labelIcon" format="string" />
+        <attr name="labelIconSize" format="integer" />
+        <attr name="labelIconColor" format="color" />
+        <attr name="clearIcon" format="string" />
+        <attr name="clearIconSize" format="integer" />
+        <attr name="clearIconColor" format="color" />
+        <attr name="ems" format="integer" />
+        <attr name="focus" format="boolean" />
+    </declare-styleable>
+
+    <!--倒计时控件-->
+    <declare-styleable name="CountdownView">
+        <attr name="totalTime" format="integer"/>
+        <attr name="period" format="integer"/>
+        <attr name="initHint" format="string"/>
+        <attr name="startHint" format="string"/>
+        <attr name="endHint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="max" format="integer"/>
+        <attr name="startAngle" format="integer"/>
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"/>
+        <attr name="backColor" format="color" />
+        <attr name="txtColor" format="color" />
+        <attr name="txtSize" format="dimension" />
+        <attr name="txtIsDisplayable" format="boolean"/>
+        <attr name="txtUnit" format="string" />
+        <attr name="style">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--字母索引控件-->
+    <declare-styleable name="LetterIndexView">
+        <attr name="bgColor" format="color"/>
+        <attr name="bgShowModel" format="integer">
+            <enum name="hidden" value="0" />
+            <enum name="alwaysHidden" value="1"/>
+            <enum name="alwaysShow" value="2"/>
+        </attr>
+        <attr name="defLetterColor" format="color"/>
+        <attr name="selLetterColor" format="color"/>
+    </declare-styleable>
+
+    <!--日历签到-->
+    <declare-styleable name="CalendarView">
+        <attr name="weekTitleColor" format="color"/>
+        <attr name="calendarDefColor" format="color"/>
+        <attr name="calendarSelColor" format="color"/>
+        <attr name="disSignColor" format="color"/>
+        <attr name="calendarDefBg" format="reference"/>
+        <attr name="calendarSelBg" format="reference"/>
+        <attr name="disSignBg" format="reference"/>
+    </declare-styleable>
+
+    <!--ActionBar布局-->
+    <declare-styleable name="ActionBarLayout">
+        <attr name="leftSize" format="integer"/>
+        <attr name="leftColor" format="color"/>
+        <attr name="leftText" format="string"/>
+        <attr name="titleSize" format="integer"/>
+        <attr name="titleColor" format="color"/>
+        <attr name="titleText" format="string"/>
+        <attr name="rightSize" format="integer"/>
+        <attr name="rightColor" format="color"/>
+        <attr name="rightText" format="string"/>
+        <attr name="bgActionBarColor" format="color"/>
+    </declare-styleable>
+
+    <!--分页activity-->
+    <declare-styleable name="TabHostView">
+        <attr name="navigaBarBg" format="reference" />
+        <attr name="defColor" format="color" />
+        <attr name="selColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DoubleTextView">
+        <attr name="oneText" format="string" />
+        <attr name="oneSelText" format="string" />
+        <attr name="oneSize" format="integer" />
+        <attr name="oneColor" format="color" />
+        <attr name="oneBgColor" format="reference" />
+        <attr name="oneSelColor" format="color" />
+        <attr name="twoText" format="string" />
+        <attr name="twoSelText" format="string" />
+        <attr name="twoSize" format="integer" />
+        <attr name="twoColor" format="color" />
+        <attr name="twoBgColor" format="reference" />
+        <attr name="twoSelColor" format="color" />
+        <attr name="dtvBgColor" format="reference" />
+        <attr name="dtvBgSelColor" format="reference" />
+        <attr name="enableColor" format="color" />
+        <attr name="isClickChange" format="boolean" />
+        <attr name="drawableSpace" format="reference" />
+        <attr name="orientation" format="integer">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SingleTextView">
+        <attr name="sText" format="string" />
+        <attr name="sSelText" format="string" />
+        <attr name="sSize" format="integer" />
+        <attr name="sColor" format="color" />
+        <attr name="sSelColor" format="color" />
+        <attr name="stvBgColor" format="reference" />
+        <attr name="stvBgSelColor" format="reference" />
+        <attr name="sEnableColor" format="color" />
+        <attr name="sIsClickChange" format="boolean" />
+        <attr name="sDrawableSpace" format="reference" />
+        <attr name="sOrientation" format="integer">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--SwitchButton-->
+    <declare-styleable name="SwitchButton">
+        <attr name="trackDefColor" format="color"/>
+        <attr name="trackSelColor" format="color"/>
+        <attr name="checked" format="boolean" />
+        <attr name="textOn" format="string" />
+        <attr name="textOff" format="string" />
+    </declare-styleable>
+</resources>

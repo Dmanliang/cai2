@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.transferaccounts.RechargePayActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_remark_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:focus="false"
+            app:hint="每次二维码仅限一次使用，300以上入款建议选择支付宝或公司入款"
+            app:hintColor="#F19149"
+            app:inputBottomSpace="10dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="filter"
+            app:labelIcon="@string/remarks_info"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:showUnderline="false" />
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginStart="20dp" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_recharge_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:hint="@string/input_recharge_money"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="number"
+            app:labelIcon="@string/recharge_money_not_unit"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:showUnderline="false" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/sure"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_saft_psw_hint"
+        android:padding="5dp"
+        android:text="@string/zhifubao_pay_hint"
+        android:textColor="@color/light_red" />
+
+</LinearLayout>

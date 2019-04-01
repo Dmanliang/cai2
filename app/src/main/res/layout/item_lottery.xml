@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_speed_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:divider="@drawable/divide_space_dm5"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:showDividers="middle">
+
+        <RadioButton
+            style="@style/rb_menu_agent_report_forms"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:tag="all"
+            android:text="全" />
+
+        <RadioButton
+            style="@style/rb_menu_agent_report_forms"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:tag="big"
+            android:text="大" />
+
+        <RadioButton
+            style="@style/rb_menu_agent_report_forms"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:tag="small"
+            android:text="小" />
+
+        <RadioButton
+            style="@style/rb_menu_agent_report_forms"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:tag="single"
+            android:text="单" />
+
+        <RadioButton
+            style="@style/rb_menu_agent_report_forms"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:tag="double"
+            android:text="双" />
+
+        <RadioButton
+            style="@style/rb_menu_agent_report_forms"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:tag="clear"
+            android:text="清" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lottery_bit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_gray_back"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/text_gray2"
+            android:textSize="10sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lottery_ball_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

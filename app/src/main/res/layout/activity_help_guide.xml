@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.sysm.HelpGuideActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:id="@+id/lly_how_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/how_register" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_how_buy_lottery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/how_buy_lottery" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_how_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/how_recharge" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_how_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/how_withdraw" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_how_phone_buy_lottery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/how_phone_buy_lottery" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_online_costom_service_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/online_costom_service_time" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_what_is_security_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/what_is_security_psw" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_everyday_withdraw_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/everyday_withdraw_count" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_how_bind_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/how_bind_bank_card" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_account_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/account_security" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_what_is_can_withdraw_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/what_is_can_withdraw_money" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+</LinearLayout>

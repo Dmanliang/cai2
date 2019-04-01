@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:checkedButton="@id/rb_today"
+        android:divider="@drawable/divide_space_dm15"
+        android:orientation="horizontal"
+        android:showDividers="beginning|middle|end">
+
+        <RadioButton
+            android:id="@+id/rb_today"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/today" />
+
+        <RadioButton
+            android:id="@+id/rb_yesterday"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/yesterday" />
+
+        <RadioButton
+            android:id="@+id/rb_current_month"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/current_month" />
+
+        <RadioButton
+            android:id="@+id/rb_last_month"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/last_month" />
+    </RadioGroup>
+</LinearLayout>

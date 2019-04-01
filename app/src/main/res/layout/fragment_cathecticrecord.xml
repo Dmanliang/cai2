@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/cathectic_record_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#eee"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="彩种期号"
+            android:textColor="@color/text_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="投注金额"
+            android:textColor="@color/text_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="奖金"
+            android:textColor="@color/text_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="操作"
+            android:textColor="@color/text_black"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider"
+        android:layout_below="@+id/cathectic_record_title_layout"
+        />
+    <TextView
+        android:id="@+id/cathecticrecord_message"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_black"
+        android:text="暂时没有投注信息!"
+        android:layout_below="@+id/line"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+    <com.sp.caitwo.ui.view.refresh.PullLoadMoreRecyclerView
+        android:id="@+id/cathecticrecord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line" />
+</RelativeLayout>

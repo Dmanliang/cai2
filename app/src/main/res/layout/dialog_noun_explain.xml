@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whitebg_r10"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/noun_explain"
+        android:textColor="@color/color_333"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_noun_explain_label"
+            android:text="投注金额:" />
+
+        <TextView
+            style="@style/tv_noun_explain_value"
+            android:text="该代理的所有下级的投注总额" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_noun_explain_label"
+            android:text="中奖金额:" />
+
+        <TextView
+            style="@style/tv_noun_explain_value"
+            android:text="该代理的所有下级的中奖总额" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_noun_explain_label"
+            android:text="活动礼金:" />
+
+        <TextView
+            style="@style/tv_noun_explain_value"
+            android:text="该代理的所有下级的活动礼金总额" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_noun_explain_label"
+            android:text="团队返佣:" />
+
+        <TextView
+            style="@style/tv_noun_explain_value"
+            android:text="该代理的所有下级的返佣收益总额" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_noun_explain_label"
+            android:text="团队盈亏:" />
+
+        <TextView
+            style="@style/tv_noun_explain_value"
+            android:text="该代理的所有下级的盈亏总额" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_noun_explain_label"
+            android:text="返点佣金:" />
+
+        <TextView
+            style="@style/tv_noun_explain_value"
+            android:text="该代理从他的团队中获得的返佣收益" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_noun_explain_label"
+            android:text="充值金额:" />
+
+        <TextView
+            style="@style/tv_noun_explain_value"
+            android:text="该代理的所有下级的充值总额" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_noun_explain_label"
+            android:text="提现金额:" />
+
+        <TextView
+            style="@style/tv_noun_explain_value"
+            android:text="该代理的所有下级的提现总额" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_noun_explain_label"
+            android:text="团队余额:" />
+
+        <TextView
+            style="@style/tv_noun_explain_value"
+            android:text="该代理的所有下级的总余额" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_i_know"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="我知道了"
+        android:textColor="#3C97EB" />
+
+
+</LinearLayout>

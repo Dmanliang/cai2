@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@+id/longdragon_toolbar"
+        layout="@layout/layout_top_bar" />
+    <RelativeLayout
+        android:id="@+id/longdragon_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_below="@+id/longdragon_toolbar">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            app:tabSelectedTextColor="@color/colorPrimary_500vip"
+            app:tabIndicatorColor="@color/colorPrimary_500vip"
+            app:tabTextColor="@color/text_gray3"/>
+        <RelativeLayout
+            android:id="@+id/lly_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/lottery_remainmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="余额:"
+                android:textColor="@color/text_gray"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/icon_remainmoney"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/lottery_remainmoney"
+                android:background="@drawable/eye_close" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/divider"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/longdragon_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/longdragon_tab_layout"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

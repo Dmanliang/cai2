@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_security_center_top_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_top_bar_nobg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <View
+                style="@style/horizontalLine"
+                android:layout_width="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/account_saft_lv"
+                android:textColor="@android:color/white" />
+
+            <View
+                style="@style/horizontalLine"
+                android:layout_width="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:divider="@drawable/divide_space_dm10"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <com.sp.xwjlibrary.widget.IconView
+                android:id="@+id/icon_star_pos1"
+                style="@style/icon_security_center_star" />
+
+            <com.sp.xwjlibrary.widget.IconView
+                android:id="@+id/icon_star_pos2"
+                style="@style/icon_security_center_star" />
+
+            <com.sp.xwjlibrary.widget.IconView
+                android:id="@+id/icon_star_pos3"
+                style="@style/icon_security_center_star" />
+
+            <com.sp.xwjlibrary.widget.IconView
+                android:id="@+id/icon_star_pos4"
+                style="@style/icon_security_center_star" />
+
+            <com.sp.xwjlibrary.widget.IconView
+                android:id="@+id/icon_star_pos5"
+                style="@style/icon_security_center_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_last_login_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/last_login_time"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_last_login_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="英国"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/verticalLine"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_change_psw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/not_me_login"
+                    android:textColor="#FFD556"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_change_login_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/change_login_psw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_set_security_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/set_saft_psw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_set_security_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/set_security_question" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:checkedButton="@id/rb_today"
+        android:divider="@drawable/divide_space_dm15"
+        android:orientation="horizontal"
+        android:showDividers="beginning|middle|end">
+
+        <RadioButton
+            android:id="@+id/rb_today"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/today" />
+
+        <RadioButton
+            android:id="@+id/rb_yesterday"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/yesterday" />
+
+        <RadioButton
+            android:id="@+id/rb_seven_days"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/seven_days" />
+
+        <RadioButton
+            style="@style/rb_menu_agent_report_forms"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="invisible" />
+
+    </RadioGroup>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checkedButton="@id/rb_all_lottery"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_sort11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divide_space_dm15"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <RadioButton
+                android:id="@+id/rb_all_lottery"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="0"
+                android:text="@string/all" />
+
+            <RadioButton
+                android:id="@+id/rb_recharge_income"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="1"
+                android:text="@string/recharge_income" />
+
+            <RadioButton
+                android:id="@+id/rb_withdraw_withhold"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="2"
+                android:text="@string/withdraw_withhold" />
+
+            <RadioButton
+                android:id="@+id/rb_bet_withhold"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="3"
+                android:text="@string/bet_withhold" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_sort12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:divider="@drawable/divide_space_dm15"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <RadioButton
+                android:id="@+id/rb_everyday_bonus_prize"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="4"
+                android:text="@string/everyday_bonus_prize" />
+
+            <RadioButton
+                android:id="@+id/rb_prize_deliver"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="5"
+                android:text="@string/prize_deliver" />
+
+            <RadioButton
+                android:id="@+id/rb_promotion_prize"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="6"
+                android:text="@string/promotion_prize" />
+
+            <RadioButton
+                android:id="@+id/rb_track_repay"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="7"
+                android:text="@string/track_repay" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_sort13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:divider="@drawable/divide_space_dm15"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <RadioButton
+                android:id="@+id/rb_bet_cancel_order"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="8"
+                android:text="@string/bet_cancel_order" />
+
+            <RadioButton
+                android:id="@+id/rb_return_point_commission"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="9"
+                android:text="@string/return_point_commission_not_unit" />
+
+            <RadioButton
+                android:id="@+id/rb_other_disount"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="10"
+                android:text="@string/other_disount" />
+
+            <RadioButton
+                android:id="@+id/rb_tie_repay"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="11"
+                android:text="@string/tie_repay" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_sort14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:divider="@drawable/divide_space_dm15"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <RadioButton
+                android:id="@+id/rb_red_package_receive"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="12"
+                android:text="@string/red_package_receive" />
+
+            <RadioButton
+                android:id="@+id/rb_red_package_send"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="13"
+                android:text="@string/red_package_send" />
+
+            <RadioButton
+                android:id="@+id/rb_red_package_back"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="14"
+                android:text="@string/red_package_back" />
+
+            <RadioButton
+                style="@style/rb_menu_agent_report_forms"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="invisible" />
+
+        </RadioGroup>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selector_login"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:text="@string/sure"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

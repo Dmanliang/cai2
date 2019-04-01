@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //工程库默认图标,不要删除
+    <string name="icon_clear">\uE600</string>
+    <string name="icon_close">\uE601</string>
+    <string name="icon_back">\uE602</string>
+
+    //APP图标
+    <string name="icon_activity">\uE700</string>
+    <string name="icon_homepage">\uE701</string>
+    <string name="icon_mine">\uE702</string>
+    <string name="icon_live">\uE703</string>
+    <string name="icon_find">\uE704</string>
+    <string name="icon_star">\uE705</string>
+    <string name="icon_exclamatory_mark">\uE706</string>
+    <string name="icon_search">\uE707</string>
+    <string name="icon_delete">\uE708</string>
+    <string name="icon_close_eyes">\uE709</string>
+    <string name="icon_withdraw">\uE710</string>
+    <string name="icon_recharge">\uE711</string>
+    <string name="icon_customer_service">\uE712</string>
+    <string name="icon_message">\uE713</string>
+    <string name="icon_setting">\uE714</string>
+    <string name="icon_bet_record">\uE715</string>
+    <string name="icon_agent_center">\uE716</string>
+    <string name="icon_business_record">\uE717</string>
+    <string name="icon_today_profit_loss">\uE718</string>
+    <string name="icon_gift_prize_exchange">\uE719</string>
+    <string name="icon_download">\uE720</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+

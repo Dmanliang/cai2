@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题风格 -->
+    <style name="NotitleTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Activity动画效果样式start -->
+    <!-- 从右边进入,左边退出的效果 -->
+    <style name="rightEnterAndLeftExit">
+        <item name="android:windowEnterAnimation">@anim/enter_right</item>
+        <item name="android:windowExitAnimation">@anim/exit_left</item>
+    </style>
+    <!-- 从左边进入,右边退出的效果 -->
+    <style name="leftEnterAndRightExit">
+        <item name="android:windowEnterAnimation">@anim/enter_left</item>
+        <item name="android:windowExitAnimation">@anim/exit_right</item>
+    </style>
+    <!-- 从右边进入,退出无动作的效果 -->
+    <style name="rightEnterAndNoExit">
+        <item name="android:windowEnterAnimation">@anim/enter_right</item>
+        <item name="android:windowExitAnimation">@anim/no_action</item>
+    </style>
+    <!-- 从左边进入,退出无动作的效果 -->
+    <style name="leftEnterAndNoExit">
+        <item name="android:windowEnterAnimation">@anim/enter_left</item>
+        <item name="android:windowExitAnimation">@anim/no_action</item>
+    </style>
+    <!-- 进入无动作,左边退出的效果 -->
+    <style name="noEnterAndLeftExit">
+        <item name="android:windowEnterAnimation">@anim/no_action</item>
+        <item name="android:windowExitAnimation">@anim/exit_left</item>
+    </style>
+    <!-- 进入无动作,右边退出的效果 -->
+    <style name="noEnterAndRightExit">
+        <item name="android:windowEnterAnimation">@anim/no_action</item>
+        <item name="android:windowExitAnimation">@anim/exit_right</item>
+    </style>
+    <!-- 进入放大,退出缩小的效果 -->
+    <style name="enterScaleAndExitScale">
+        <item name="android:windowEnterAnimation">@anim/enter_scale_big</item>
+        <item name="android:windowExitAnimation">@anim/exit_scale_lessen</item>
+    </style>
+    <!-- 进入放大动作的效果 -->
+    <style name="enterScale">
+        <item name="android:windowEnterAnimation">@anim/enter_scale_big</item>
+        <item name="android:windowExitAnimation">@anim/no_action</item>
+    </style>
+    <!-- 退出缩小动作的效果 -->
+    <style name="exitScale">
+        <item name="android:windowEnterAnimation">@anim/no_action</item>
+        <item name="android:windowExitAnimation">@anim/exit_scale_lessen</item>
+    </style>
+    <!-- Activity动画效果样式end -->
+
+    <!-- 上下弹出的效果 -->
+    <style name="bottomEnterAndExit">
+        <item name="android:windowEnterAnimation">@anim/enter_bottom</item>
+        <item name="android:windowExitAnimation">@anim/exit_bottom</item>
+    </style>
+
+    <style name="rightEnterAndExit">
+        <item name="android:windowEnterAnimation">@anim/enter_right</item>
+        <item name="android:windowExitAnimation">@anim/exit_right</item>
+    </style>
+
+    <style name="yToTopScale">
+        <item name="android:windowEnterAnimation">@anim/y_scale_big_top</item>
+        <item name="android:windowExitAnimation">@anim/y_scale_lessen_top</item>
+    </style>
+
+    <style name="alphaEnterAndExit">
+        <item name="android:windowEnterAnimation">@anim/enter_alpha</item>
+        <item name="android:windowExitAnimation">@anim/exit_alpha</item>
+    </style>
+
+
+    <style name="custom_dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:backgroundDimEnabled">false</item><!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--除去背景色-->
+        <!--<item name="android:radius">10dp</item>-->
+    </style>
+
+
+    <style name="horizontalLine">
+        <item name="android:background">#ddd</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:enabled">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <style name="verticalLine">
+        <item name="android:background">#ddd</item>
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:enabled">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <style name="spaceDivide">
+        <item name="android:background">#F5F5F5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:enabled">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+</resources>

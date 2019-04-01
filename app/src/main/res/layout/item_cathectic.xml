@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/cathectic_photo_layout"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/lottery_photo"
+                android:layout_width="34dp"
+                android:layout_height="34dp" />
+
+            <TextView
+                android:id="@+id/lottery_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_black"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/num_time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cathectic_photo_layout"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/cathectic_photo_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/game_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:textSize="14dp" />
+
+            <com.sp.caitwo.ui.view.LongDragonCountDown
+                android:id="@+id/game_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num_time_layout"
+            android:layout_alignLeft="@+id/num_time_layout"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/cathectic_photo_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bit_number"
+                android:layout_width="28dp"
+                android:layout_height="15dp"
+                android:background="@drawable/shape_rect_gray"
+                android:gravity="center"
+                android:text="第九"
+                android:textColor="@color/text_white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/bxds_text"
+                android:layout_width="28dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_rect_blue"
+                android:gravity="center"
+                android:text="小"
+                android:textColor="@color/text_white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/cathectic_times"
+                android:layout_width="28dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_rect_red"
+                android:gravity="center"
+                android:text="7期"
+                android:textColor="@color/text_white"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/cathectic_ds"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/shape_rect_gray_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cathectic_type1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单"
+                    android:textColor="@color/red_gesture"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/bili1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="赔率0.01"
+                    android:textColor="@color/gray2"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cathectic_dx"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_rect_gray_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cathectic_type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大"
+                    android:textColor="@color/red_gesture"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/bili2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="赔率0.01"
+                    android:textColor="@color/gray2"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/divide_space_dm10"
+    android:orientation="horizontal"
+    android:showDividers="beginning|middle|end">
+
+    <RadioButton style="@style/rb_menu_agent_report_forms" />
+
+    <RadioButton style="@style/rb_menu_agent_report_forms" />
+
+    <RadioButton style="@style/rb_menu_agent_report_forms" />
+
+    <RadioButton style="@style/rb_menu_agent_report_forms" />
+
+</RadioGroup>

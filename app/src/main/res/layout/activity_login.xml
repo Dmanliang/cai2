@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical"
+    tools:context=".ui.activity.sysm.LoginActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:filterChars="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890"
+            app:hint="@string/input_account_hint"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="filter"
+            app:labelIcon="@string/account"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="18"
+            app:textSize="16" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_psw_hint"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="password"
+            app:labelIcon="@string/password"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="18"
+            app:showUnderline="false"
+            app:textSize="16" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_get_back_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/get_back_psw"
+        android:textColor="@color/light_red" />
+
+    <Button
+        android:id="@+id/btn_immediately_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/immediately_login"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_free_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/selector_register"
+        android:text="@string/free_register"
+        android:textColor="@color/light_red" />
+</LinearLayout>

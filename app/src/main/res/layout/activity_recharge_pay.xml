@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.transferaccounts.RechargePayActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recharge_passage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:divider="@drawable/divide_line_horizontal_marginleft20_px1"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:id="@+id/lly_pay_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="40dp"
+                        android:text="@string/sel_way"
+                        android:textColor="@color/app_black" />
+
+                    <ImageView
+                        android:id="@+id/iv_pay_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:padding="5dp"
+                        android:src="@drawable/icon_zhifubao" />
+
+                    <TextView
+                        android:id="@+id/tv_sel_way"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/arrow_right_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lly_offline_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divide_line_horizontal_marginleft20_px1"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:id="@+id/lly_receivables_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.sp.xwjlibrary.widget.IconEditClearView
+                            android:id="@+id/iecv_receivables_person"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="20dp"
+                            app:focus="false"
+                            app:inputBottomSpace="10dp"
+                            app:inputLeftSpace="40dp"
+                            app:inputType="filter"
+                            app:labelIcon="收款人　"
+                            app:labelIconColor="@color/app_black"
+                            app:labelIconSize="14"
+                            app:showUnderline="false" />
+
+                        <TextView
+                            android:id="@+id/tv_copy_receivables_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="8dp"
+                            android:tag="person"
+                            android:text="@string/copy"
+                            android:textColor="#3C97EB" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lly_receivables_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.sp.xwjlibrary.widget.IconEditClearView
+                            android:id="@+id/iecv_receivables_account"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="20dp"
+                            app:focus="false"
+                            app:inputBottomSpace="10dp"
+                            app:inputLeftSpace="40dp"
+                            app:inputType="filter"
+                            app:labelIcon="收款账号"
+                            app:labelIconColor="@color/app_black"
+                            app:labelIconSize="14"
+                            app:showUnderline="false" />
+
+                        <TextView
+                            android:id="@+id/tv_copy_receivables_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="8dp"
+                            android:tag="account"
+                            android:text="@string/copy"
+                            android:textColor="#3C97EB" />
+                    </LinearLayout>
+
+                    <com.sp.xwjlibrary.widget.IconEditClearView
+                        android:id="@+id/iecv_pay_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        app:clearIcon="@string/icon_clear"
+                        app:hint="@string/input_pay_account"
+                        app:inputBottomSpace="10dp"
+                        app:inputLeftSpace="40dp"
+                        app:labelIcon="@string/pay_account"
+                        app:labelIconColor="@color/app_black"
+                        app:labelIconSize="14"
+                        app:showUnderline="false" />
+                </LinearLayout>
+
+                <com.sp.xwjlibrary.widget.IconEditClearView
+                    android:id="@+id/iecv_recharge_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingStart="20dp"
+                    app:clearIcon="@string/icon_clear"
+                    app:hint="@string/input_recharge_money"
+                    app:inputBottomSpace="10dp"
+                    app:inputLeftSpace="40dp"
+                    app:inputType="number"
+                    app:labelIcon="@string/recharge_money_not_unit"
+                    app:labelIconColor="@color/app_black"
+                    app:labelIconSize="14"
+                    app:showUnderline="false" />
+
+                <com.sp.xwjlibrary.widget.IconEditClearView
+                    android:id="@+id/iecv_remark_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:paddingStart="20dp"
+                    android:visibility="gone"
+                    app:focus="false"
+                    app:hint="@string/zhifubao_recharge_remark_info"
+                    app:hintColor="#F19149"
+                    app:inputBottomSpace="10dp"
+                    app:inputLeftSpace="40dp"
+                    app:inputType="filter"
+                    app:labelIcon="@string/remarks_info"
+                    app:labelIconColor="@color/app_black"
+                    app:labelIconSize="14"
+                    app:showUnderline="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <com.sp.xwjlibrary.widget.IconEditClearView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="20dp"
+                    app:focus="false"
+                    app:hint="点击扫描二维码"
+                    app:inputBottomSpace="10dp"
+                    app:inputLeftSpace="40dp"
+                    app:inputType="filter"
+                    app:labelIcon="二维码　"
+                    app:labelIconColor="@color/app_black"
+                    app:labelIconSize="14"
+                    app:showUnderline="false" />
+
+                <TextView
+                    android:id="@+id/tv_look_over_qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:tag="person"
+                    android:text="@string/look_over"
+                    android:textColor="#3C97EB" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/selector_login"
+                android:text="@string/sure"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_saft_psw_hint"
+                android:padding="5dp"
+                android:text="@string/zhifubao_pay_hint"
+                android:textColor="@color/light_red" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

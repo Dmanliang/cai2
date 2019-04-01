@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_white"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_wanfa_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_wanfa_name"
+                style="@style/bet_bill_detail_label" />
+
+            <TextView
+                android:id="@+id/tv_issue_num"
+                style="@style/bet_bill_sub_label"
+                android:text="@string/some_issue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bet_money"
+                style="@style/bet_bill_detail_label_value"
+                android:text="@string/money_with_sign" />
+
+            <TextView
+                android:id="@+id/tv_bet_time"
+                style="@style/bet_bill_sub_label"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/text_white"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/bet_bill_detail_label"
+            android:layout_marginEnd="15dp"
+            android:text="@string/delivery_prize" />
+
+        <TextView
+            android:id="@+id/tv_delivery_prize"
+            style="@style/bet_bill_detail_label_value" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/text_white"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/bet_bill_detail_label"
+            android:layout_marginEnd="15dp"
+            android:text="@string/lottery_num" />
+
+        <TextView
+            android:id="@+id/tv_lottery_num"
+            style="@style/bet_bill_detail_label" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/text_white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/lottery_ticket_text"
+            style="@style/bet_bill_detail_label"
+            android:layout_marginEnd="15dp"
+            android:text="@string/lottery_ticket" />
+
+        <TextView
+            android:id="@+id/tv_lottery_ticket"
+            style="@style/bet_bill_detail_label"
+            android:layout_toRightOf="@+id/lottery_ticket_text"/>
+
+        <TextView
+            android:id="@+id/lottery_ticket_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="复制"
+            android:textColor="@color/light_blue"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/Grey_100" />
+
+    <TextView
+        style="@style/bet_bill_detail_label"
+        android:background="@color/text_white"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:text="@string/bet_detail" />
+
+    <View style="@style/horizontalLine" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_bet_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/Grey_100" />
+
+</LinearLayout>

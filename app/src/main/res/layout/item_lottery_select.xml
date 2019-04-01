@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/lottery_bit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/lottery_bit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/text_gray_back"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/text_gray2"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:divider="@drawable/divide_space_dm5"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <com.sp.xwjlibrary.widget.SingleTextView
+                    android:id="@+id/lottery_select_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    app:isClickChange="true"
+                    app:sColor="@color/gray2"
+                    app:sSelColor="@android:color/white"
+                    app:sSize="9"
+                    app:sText="全"
+                    app:stvBgColor="@drawable/shape_gray_side_white_bg_r3"
+                    app:stvBgSelColor="@drawable/shape_lightred_bg_r3" />
+
+                <com.sp.xwjlibrary.widget.SingleTextView
+                    android:id="@+id/lottery_select_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    app:isClickChange="true"
+                    app:sColor="@color/gray2"
+                    app:sSelColor="@android:color/white"
+                    app:sSize="9"
+                    app:sText="大"
+                    app:stvBgColor="@drawable/shape_gray_side_white_bg_r3"
+                    app:stvBgSelColor="@drawable/shape_lightred_bg_r3" />
+
+                <com.sp.xwjlibrary.widget.SingleTextView
+                    android:id="@+id/lottery_select_little"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    app:isClickChange="true"
+                    app:sColor="@color/gray2"
+                    app:sSelColor="@android:color/white"
+                    app:sSize="9"
+                    app:sText="小"
+                    app:stvBgColor="@drawable/shape_gray_side_white_bg_r3"
+                    app:stvBgSelColor="@drawable/shape_lightred_bg_r3" />
+
+                <com.sp.xwjlibrary.widget.SingleTextView
+                    android:id="@+id/lottery_select_single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    app:isClickChange="true"
+                    app:sColor="@color/gray2"
+                    app:sSelColor="@android:color/white"
+                    app:sSize="9"
+                    app:sText="单"
+                    app:stvBgColor="@drawable/shape_gray_side_white_bg_r3"
+                    app:stvBgSelColor="@drawable/shape_lightred_bg_r3" />
+
+                <com.sp.xwjlibrary.widget.SingleTextView
+                    android:id="@+id/lottery_select_double"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    app:isClickChange="true"
+                    app:sColor="@color/gray2"
+                    app:sSelColor="@android:color/white"
+                    app:sSize="9"
+                    app:sText="双"
+                    app:stvBgColor="@drawable/shape_gray_side_white_bg_r3"
+                    app:stvBgSelColor="@drawable/shape_lightred_bg_r3" />
+
+                <com.sp.xwjlibrary.widget.SingleTextView
+                    android:id="@+id/lottery_select_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    app:isClickChange="true"
+                    app:sColor="@color/gray2"
+                    app:sSelColor="@android:color/white"
+                    app:sSize="9"
+                    app:sText="清"
+                    app:stvBgColor="@drawable/shape_gray_side_white_bg_r3"
+                    app:stvBgSelColor="@drawable/shape_lightred_bg_r3" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lottery_ball_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lottery_bit_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/lottery_ball_list"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/divider" />
+    </RelativeLayout>
+
+</RelativeLayout>

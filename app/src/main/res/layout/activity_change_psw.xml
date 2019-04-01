@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.securitycenter.ChangePswActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_old_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_old_psw"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="password"
+            app:labelIcon="@string/old_psw"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_login_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_login_psw"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="password"
+            app:labelIcon="@string/login_psw"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_confirm_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/confirm_psw_hint"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="password"
+            app:labelIcon="@string/confirm_psw"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:showUnderline="false"
+            app:textSize="12" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/sure"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

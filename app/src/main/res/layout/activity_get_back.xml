@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.securitycenter.GetBackPswActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:filterChars="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890"
+            app:hint="@string/input_account_hint"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="filter"
+            app:labelIcon="@string/account"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sp.xwjlibrary.widget.IconEditClearView
+                android:id="@+id/iecv_check_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                app:clearIcon="@string/icon_clear"
+                app:hint="@string/input_check_code_hint"
+                app:inputBottomSpace="15dp"
+                app:inputLeftSpace="40dp"
+                app:labelIcon="@string/check_code"
+                app:labelIconColor="@color/app_black"
+                app:labelIconSize="14"
+                app:showUnderline="false"
+                app:textSize="12" />
+
+            <ImageView
+                android:id="@+id/iv_check_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/sure"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

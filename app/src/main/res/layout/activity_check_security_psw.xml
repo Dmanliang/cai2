@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.securitycenter.CheckSecurityPswActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.sp.xwjlibrary.widget.IconEditClearView
+        android:id="@+id/iecv_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        app:clearIcon="@string/icon_clear"
+        app:filterChars="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890"
+        app:hint="@string/input_account_hint"
+        app:inputBottomSpace="15dp"
+        app:inputLeftSpace="40dp"
+        app:inputType="filter"
+        app:labelIcon="@string/account"
+        app:labelIconColor="@color/app_black"
+        app:labelIconSize="14"
+        app:textSize="12" />
+
+
+    <com.sp.xwjlibrary.widget.IconEditClearView
+        android:id="@+id/iecv_old_security_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        app:clearIcon="@string/icon_clear"
+        app:filterChars="0123456789"
+        app:hint="@string/input_old_psw"
+        app:inputBottomSpace="15dp"
+        app:inputLeftSpace="40dp"
+        app:inputType="filterPsw"
+        app:labelIcon="@string/old_security_psw"
+        app:labelIconColor="@color/app_black"
+        app:labelIconSize="14"
+        app:maxLength="6"
+        app:textSize="12" />
+
+
+    <TextView
+        android:id="@+id/tv_forget_security_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        android:text="@string/forget_security_psw"
+        android:textColor="@color/light_red" />
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/sure"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_saft_psw_hint"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <com.sp.xwjlibrary.widget.IconView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_exclamatory_mark"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/saft_psw_hint"
+            android:textColor="@color/light_red" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

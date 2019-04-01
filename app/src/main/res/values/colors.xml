@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="d_blue">#5D75FE</drawable>
+    <drawable name="d_white">#ffffff</drawable>
+    <color name="colorPrimary">#E54B55</color>
+    <!--<color name="colorPrimary">#FE504F</color>-->
+    <color name="colorPrimary_500vip">#E54B55</color>
+    <!--<color name="colorPrimary_500vip">#FE504F</color>-->
+    <color name="colorPrimaryDark">#393a3f</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_activity">#ebebeb</color>
+
+    <color name="tab_text_nor">#999999</color>
+    <color name="tab_text_sel">#FE5150</color>
+    <color name="text_black">#333333</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_gray2">#666666</color>
+    <color name="text_gray3">#888888</color>
+    <color name="text_gray4">#A4A4A4</color>
+    <color name="text_gray_back">#fff5f5f5</color>
+    <color name="text_blue">#3a84ff</color>
+    <color name="text_yellow">#fbfd00</color>
+    <color name="text_yellow2">#ffc730</color>
+    <color name="text_brown">#6b492c</color>
+    <color name="text_red">#E54B55</color>
+    <!--<color name="text_red">#ff0000</color>-->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_green">#15d799</color>
+    <color name="text_blue_ed">#EDEFFC</color>
+
+    <color name="divider">#d8d8d8</color>
+    <color name="blue_gesture">#5D75FE</color>
+    <color name="red_gesture">#FE504F</color>
+    <color name="circle_orange">#F78D4A</color>
+    <color name="circle_blue">#0921DC</color>
+    <color name="circle_green">#367F25</color>
+    <color name="circle_red">#F02828</color>
+    <color name="circle_gray">#C8C8C8</color>
+    <color name="holo_black">#ff111111</color>
+    <color name="circle_fd">#FFFD9800</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="color_fe504f">#fe504f</color>
+    <color name="color_dc">#DC5858</color>
+    <color name="color_80">#808080</color>
+    <color name="color_b8">#B8B8B8</color>
+    <color name="color_black">#333333</color>
+    <color name="color_input_background">#b4ffffff</color>
+    <color name="colorTransparent">#44777777</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorTopDivider">#faf7f7</color>
+    <color name="colorText">#666</color>
+    <color name="colorText2">#999</color>
+    <color name="colorRed">#FF464e</color>
+    <color name="color_fd">#FD8902</color>
+    <color name="black_a10_color">#1a000000</color>
+    <color name="colorTintRed">#FF4C58</color>
+    <!--发送弹幕颜色-->
+    <color name="colorSendName">#9966cc</color>
+    <color name="colorSendName1">#F12B5B</color>
+    <color name="colorSendName2">#2B7DE2</color>
+    <color name="colorSendName3">#006599</color>
+    <color name="colorSendName4">#FF7906</color>
+    <color name="colorSendName5">#1FBCB6</color>
+    <color name="colorSendName6">#FFAE1F</color>
+    <color name="colorSendName7">#FF437D</color>
+    <color name="colorpink">#ff77aa</color>
+    <color name="biz_audio_progress_bg">#00b2ff</color>
+    <color name="biz_audio_progress_first">#ffffff</color>
+    <color name="biz_audio_progress_second">#6b6666</color>
+    <color name="c1">#0ACCAC</color>
+    <color name="c2">#222b48</color>
+    <color name="c3">#F3F3F3</color>
+    <color name="c4">#F5F5F5</color>
+    <color name="c5">#D8D8D8</color>
+    <color name="c6">#FFFFFF</color>
+    <color name="c7">#000000</color>
+    <color name="c8">#FFFFFF</color>
+    <color name="c9">#777777</color>
+    <color name="google_red">#d62d20</color>
+    <color name="google_blue">#0057e7</color>
+    <color name="google_green">#008744</color>
+    <color name="google_yellow">#ffa700</color>
+    <color name="lottery_text1">#727272</color>
+    <color name="lottery_text2">#FE504F</color>
+    <color name="lottery_text3">#2F2F2F</color>
+    <color name="lottery_text4">#0267BC</color>
+    <color name="lottery_text5">#404040</color>
+    <color name="lottery_green">#5BB960</color>
+    <color name="lottery_blue">#579EEE</color>
+    <color name="lottery_red">#EE4549</color>
+    <color name="lottery_gray">#A4A4A4</color>
+
+
+    //视酷
+    <color name="normal_bg">#fff0eff4</color>
+    <color name="main_tab_text_normal_grey">#ff83888e</color>
+    <color name="sub_tab_text_normal_black">#ff2d2f32</color>
+    <color name="orange">#fffa6015</color>
+    <color name="actionbar_selector_color">#4d000000</color>
+    <color name="action_bar_tittle_color">#ffcfcfcf</color>
+    <color name="hint_text_color">#ff999999</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="black">#323232</color>
+    <color name="black_2">#000000</color>
+
+    <color name="grey">#ffa7a7a7</color>
+    <color name="dark_grey">#ff7a7a7a</color>
+    <color name="dark_dark_grey">#8b8a8a</color>
+    <color name="black_trans_33">#11000000</color>
+    <color name="black_trans_99">#99000000</color>
+    <color name="chat_black_alpa">#88000000</color>
+    <color name="light_grey">#DDDDDD</color>
+    <color name="dark_orange">#ffd24d0c</color>
+    <color name="text_select">#fffa6015</color>
+    <color name="gray">#ff999999</color>
+    <color name="gray2">#888888</color>
+    <color name="light_gray">#283339</color>
+    <color name="fade_black">#44000000</color>
+    <color name="green">#ff36d55c</color>
+    <color name="yellow">#ffffba00</color>
+    <color name="blue">#ff3db4ff</color>
+    <color name="purple">#ffc47cf2</color>
+
+    <color name="replay_text_color_normal">#ffa19992</color>
+    <color name="replay_text_color_select">#ff352828</color>
+    <color name="operation_more_text_bg_normal">#ff363b3d</color>
+    <color name="operation_more_text_bg_press">#ff282c2e</color>
+    <color name="link_nick_name_color">#ff576b95</color>
+
+    <color name="dialog_normal">#0079FF</color>
+    <color name="app_white">#ffffffff</color>
+    <color name="orage">#ffff9933</color>
+    <color name="app_black">#ff000000</color>
+    <color name="item_pressed_color">#ffe1e3e2</color>
+    <color name="light_gray_7">#ffe8e7e7</color>
+    <color name="department_item">#aed4eb</color>
+    <color name="person_item">#e1f6f4</color>
+    <color name="no_item">#2e3333</color>
+    <color name="btn_live_1">#662b11</color>
+    <color name="btn_live_2">#43b199</color>
+    <color name="uncheck_item">#a1a1a4</color>
+    <color name="color_text">#b1abab</color>
+    <color name="color_text_white">#FCFCFC</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_violet">#9900FF</color>
+    <color name="color_gray">#736F6E</color>
+    <color name="color_dark">#161C27</color>
+    <color name="color_light">#4D6288</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_role1">#f9cd0a</color>
+    <color name="color_role2">#ff36d55c</color>
+    <color name="color_role3">#ff3db4ff</color>
+
+    <color name="redpacket_bg">#D85940</color>
+
+    <color name="comment_background">#EFEFEF</color>
+    <color name="circle_add_item_bg">#E5E5E5</color>
+    <color name="pop_line">#E5E5E5</color>
+    <color name="pop_line_for_black_bg">#A5A5A5</color>
+
+    <color name="chat_background">#02d8c9</color>
+    <color name="alp_background">#55000000</color>
+    <color name="manager_back">#a080cb</color>
+    <color name="chat_bottom_line">#DDDDDD</color>
+    <color name="tip_background">#33000000</color>
+    <color name="Grey_50">#FAFAFA</color>
+    <color name="Grey_100">#f5f5f5</color>
+    <color name="Grey_200">#EEEEEE</color>
+    <color name="Grey_300">#E0E0E0</color>
+    <color name="Grey_400">#BDBDBD</color>
+    <color name="Grey_500">#9E9E9E</color>
+    <color name="Grey_600">#757575</color>
+    <color name="Grey_700">#616161</color>
+    <color name="Grey_800">#424242</color>
+    <color name="Grey_900">#212121</color>
+    <color name="Grey_gai">#d4d0ca</color>
+    <color name="line">#FF757473</color>
+    <color name="show_background">#00000000</color>
+    <color name="button_text">#3478F6</color>
+
+    <!-- ////////// 切换皮肤 ///////////// -->
+    <color name="main_color">#4FC557</color>
+    <color name="app_skin_normal">#53CAC3</color>
+    <color name="app_skin_blue">#099FDE</color>
+    <color name="app_skin_red">#DE3031</color>
+    <color name="app_skin_pink">#ff9ffe</color>
+    <!-- action bar为微信色，其它都为绿色，不变 -->
+    <color name="app_skin_black">#393A3F</color>
+    <color name="app_skin_green">#4FC557</color>
+
+    <!-- /////////////////////////////////// -->
+    <color name="divider_color">#66000000</color>
+
+    <color name="chat_bg">#EBEBEB</color>
+    <color name="chat_red_bg">#F69F3E</color>
+    <color name="light_red">#E54B55</color>
+    <color name="wanfa_introduce">#ff333333</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="big_double_yellow">#F8B551</color>
+    <color name="small_single_blue">#3C97EB</color>
+    <color name="color_333">#333333</color>
+    <color name="color_666">#666666</color>
+    <color name="color_888">#888888</color>
+    <color name="star_color_sel">#FFD556</color>
+    <color name="star_color_def">@android:color/white</color>
+</resources>

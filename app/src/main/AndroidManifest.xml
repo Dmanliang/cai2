@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sp.caitwo">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NotitleTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sp.caitwo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".ui.activity.sysm.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.lottery.AllWanFaActivity" />
+        <activity
+            android:name=".ui.activity.lottery.LotteryActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.sysm.LoginActivity" />
+        <activity android:name=".ui.activity.sysm.RegisterActivity" />
+        <activity android:name=".ui.activity.securitycenter.GetBackPswActivity" />
+        <activity android:name=".ui.activity.sysm.WebLoadActivity" />
+        <activity android:name=".ui.activity.sysm.SettingActivity" />
+        <activity android:name=".ui.activity.securitycenter.SecurityCenterActivity" />
+        <activity android:name=".ui.activity.securitycenter.ChangePswActivity" />
+        <activity android:name=".ui.activity.securitycenter.SetSecurityPswActivity" />
+        <activity android:name=".ui.activity.securitycenter.SetSecurityQuestionActivity" />
+        <activity android:name=".ui.activity.securitycenter.BankCardManageActivity" />
+        <activity android:name=".ui.activity.securitycenter.AddBankCardActivity" />
+        <activity android:name=".ui.activity.lottery.BetBillDetailActivity" />
+        <activity android:name=".ui.activity.securitycenter.CheckSecurityPswActivity" />
+        <activity android:name=".ui.activity.agentcenter.AgentCenterActivity" />
+        <activity android:name=".ui.activity.agentcenter.ReturnCommissionDetailActivity" />
+        <activity android:name=".ui.activity.agentcenter.SubordinateOpenerActivity" />
+        <activity android:name=".ui.activity.securitycenter.CheckSecurityQuestionActivity" />
+        <activity android:name=".ui.activity.agentcenter.AgentReportFormsActivity" />
+        <activity
+            android:name=".ui.activity.lottery.LongDragonActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.agentcenter.SubordinateManageActivity" />
+        <activity android:name=".ui.activity.agentcenter.SubordinateBetDetailActivity" />
+        <activity android:name=".ui.activity.agentcenter.SubordinateBusinessDetailActivity" />
+        <activity android:name=".ui.activity.agentcenter.SubBetBillDetailActivity" />
+        <activity android:name=".ui.activity.transferaccounts.RechargeWayActivity" />
+        <activity android:name=".ui.activity.transferaccounts.CompanyIncomeActivity" />
+        <activity android:name=".ui.activity.transferaccounts.WithdrawActivity" />
+        <activity android:name=".ui.activity.UserInfo.ProfitLossActivity" />
+        <activity
+            android:name=".ui.activity.UserInfo.UserBetRecordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.UserInfo.UserBusinessRecordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.activitycenter.DailyBonusActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.activitycenter.PromotionAwardActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.activity.UserInfo.PersonDetailActivity" />
+        <activity
+            android:name=".ui.activity.lottery.LotteryCathecticActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.activity.transferaccounts.RechargePayActivity" />
+        <activity android:name=".ui.activity.transferaccounts.WechatActivity" />
+        <activity android:name=".ui.activity.transferaccounts.YinLianActivity" />
+        <activity android:name=".ui.activity.transferaccounts.JingDongActivity" />
+        <activity android:name=".ui.activity.sysm.MessageActivity" />
+        <activity android:name=".ui.activity.UserInfo.TraceNumDetailActivity" />
+        <activity android:name=".ui.activity.agentcenter.AgentExplainActivity" />
+        <activity android:name=".ui.activity.activitycenter.ActivityDetailActivity" />
+        <activity android:name=".ui.activity.sysm.AboutActivity" />
+        <activity android:name=".ui.activity.sysm.HelpGuideActivity" />
+        <activity android:name=".ui.activity.sysm.CustomServiceActivity" />
+        <activity android:name=".ui.activity.UserInfo.PlayerInfoActivity"></activity>
+    </application>
+
+</manifest>

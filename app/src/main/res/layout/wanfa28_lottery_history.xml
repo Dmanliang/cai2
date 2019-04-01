@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/issue_num"
+            style="@style/item_lottery_history" />
+
+        <TextView
+            style="@style/item_lottery_history"
+            android:layout_weight="1.5"
+            android:text="@string/lottery_num" />
+
+        <TextView
+            style="@style/item_lottery_history"
+            android:text="@string/num_size" />
+
+        <TextView
+            style="@style/item_lottery_history"
+            android:text="@string/form" />
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrv_lottery_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical"
+    tools:context=".ui.activity.sysm.RegisterActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_invite_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/invite_code_hint"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:labelIcon="@string/invite_code"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:filterChars="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890"
+            app:hint="@string/account_hint"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="filter"
+            app:labelIcon="@string/account"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_set_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/set_psw_hint"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="password"
+            app:labelIcon="@string/set_psw"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_confirm_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/confirm_psw_hint"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="password"
+            app:labelIcon="@string/confirm_psw"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:showUnderline="false"
+            app:textSize="12" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/immediately_register"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    只有上下边框的shape    -->
+
+    <item android:left="-2px" android:right="-2px">
+        <shape>
+            <!--    边框颜色    -->
+            <stroke android:color="@color/Grey_200" android:width="1px"/>
+            <size android:height="10dp" />
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+</layer-list>

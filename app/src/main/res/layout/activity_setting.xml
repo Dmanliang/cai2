@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:id="@+id/lly_security_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/security_center" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_bank_card_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/bank_card_manage" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/clear_cache" />
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lly_help_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/help_guide" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lly_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/about" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_right_gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_quit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/quit_login"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

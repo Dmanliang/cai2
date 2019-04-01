@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp">
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_search_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/whitebg_grayside_r5"
+            android:paddingStart="13dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_subordinate_agent_account"
+            app:inputBottomSpace="8dp"
+            app:inputLeftSpace="8dp"
+            app:labelIcon="@string/icon_search"
+            app:showUnderline="false" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bluebg_r5"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/search"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <RadioGroup
+        android:id="@+id/rg_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_account_detail"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_account_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="0"
+            android:text="@string/account_detail"
+            android:textColor="@color/gray2lightred" />
+
+        <RadioButton
+            android:id="@+id/rb_withdraw_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="1"
+            android:text="@string/withdraw_record"
+            android:textColor="@color/gray2lightred" />
+
+        <RadioButton
+            android:id="@+id/rb_recharge_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="2"
+            android:text="@string/recharge_record"
+            android:textColor="@color/gray2lightred" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/indicator"
+        style="@style/horizontalLine"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:background="@color/light_red" />
+
+    <View style="@style/horizontalLine" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_bet_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

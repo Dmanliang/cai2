@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/lly_lottery_history"
+        layout="@layout/lottery_head_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/text_white">
+        <include layout="@layout/fragment_bet_class_kuai3" />
+    </ScrollView>
+
+    <include layout="@layout/lottery_cathectic_bottom" />
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divide_space_dm10"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:showDividers="middle|end">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/agent_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="恭喜您的账号既是玩家账号也是代理账号，既可以自己投注，也可以发展下级赚取返点佣金。"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="如何赚取返点佣金？"
+                android:textColor="#E4393C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="可获得的返点佣金，取决于自身返点与下级返点的差值，如自身返点3，下级返点1，你将能获得下级投注金额2%的返佣，即下级投注100元，你将会获得2元；"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="如何为下级开户？"
+                android:textColor="#E4393C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击下级开户 >> 为下级设置返点 >> 生成邀请码 >> 发送邀请码给下级 >> 下级即可注册；"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="如何查看下级发展？"
+                android:textColor="#E4393C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击下级管理，就能查看您所有下级账号；\n点击代理报表、下级投注记录、下级交易记录查看代理的发展情况；"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="如何查看自身返点和赔率？"
+                android:textColor="#E4393C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击下级开户，可查看自身返点；\n点击下级开户 >> 返点赔率表，可查看返点对应赔率；"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="温馨提示："
+                android:textColor="#E4393C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="为下级设置的返点不同赔率也不同，返点越低，赔率就越低，建议为下级设置的返点不要过低；\n如果您为下级开设的是代理类型的账号，那么您的下级就能继续发展下级；\n如果您为下级开设的是玩家类型的账号，那么您的下级只能投注，不能再发展下级，也看不到代理中心；\n建议开设的下级是代理类型，无论发展了几级，您都能获得返佣。"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

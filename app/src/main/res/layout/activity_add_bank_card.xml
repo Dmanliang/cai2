@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.securitycenter.AddBankCardActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_opener_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_opener_name"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:labelIcon="@string/opener_name"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sp.xwjlibrary.widget.IconEditClearView
+                android:id="@+id/iecv_sel_bank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                app:focus="false"
+                app:hint="@string/please_sel_bank"
+                app:inputBottomSpace="15dp"
+                app:inputLeftSpace="40dp"
+                app:labelIcon="@string/please_select_bank"
+                app:labelIconColor="@color/app_black"
+                app:labelIconSize="14"
+                app:textSize="12" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow_right_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sp.xwjlibrary.widget.IconEditClearView
+                android:id="@+id/iecv_opener_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                app:focus="false"
+                app:hint="@string/please_select_opener_province"
+                app:inputBottomSpace="15dp"
+                app:inputLeftSpace="40dp"
+                app:inputType="filter"
+                app:labelIcon="@string/opener_province"
+                app:labelIconColor="@color/app_black"
+                app:labelIconSize="14"
+                app:textSize="12" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow_right_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sp.xwjlibrary.widget.IconEditClearView
+                android:id="@+id/iecv_opener_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                app:focus="false"
+                app:hint="@string/please_select_opener_city"
+                app:inputBottomSpace="15dp"
+                app:inputLeftSpace="40dp"
+                app:inputType="filter"
+                app:labelIcon="@string/opener_city"
+                app:labelIconColor="@color/app_black"
+                app:labelIconSize="14"
+                app:textSize="12" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow_right_gray" />
+        </LinearLayout>
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_branch_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_branch_bank_name"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:labelIcon="@string/branch_bank_name"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_bank_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_bank_card_num"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:labelIcon="@string/bank_card_num"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_confirm_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_again_card_num"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:labelIcon="@string/confirm_card_num"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:textSize="12" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_security_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:hint="@string/input_security_psw"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="filterPsw"
+            app:filterChars="0123456789"
+            app:maxLength="6"
+            app:labelIcon="@string/security_psw"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:showUnderline="false"
+            app:textSize="12" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/sure"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_all"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="0"
+            android:text="@string/all"
+            android:textColor="@color/gray2lightred" />
+
+        <RadioButton
+            android:id="@+id/rb_not_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="1"
+            android:text="@string/not_start"
+            android:textColor="@color/gray2lightred" />
+
+        <RadioButton
+            android:id="@+id/rb_ongoing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="2"
+            android:text="@string/ongoing"
+            android:textColor="@color/gray2lightred" />
+
+        <RadioButton
+            android:id="@+id/rb_already_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="3"
+            android:text="@string/already_end"
+            android:textColor="@color/gray2lightred" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/indicator"
+        style="@style/horizontalLine"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:background="@color/light_red" />
+
+    <View style="@style/horizontalLine" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_bet_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

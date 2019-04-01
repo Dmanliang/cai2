@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.transferaccounts.CompanyIncomeActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sp.xwjlibrary.widget.IconEditClearView
+                android:id="@+id/iecv_account_balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                app:focus="false"
+                app:inputBottomSpace="15dp"
+                app:inputLeftSpace="40dp"
+                app:labelIcon="@string/account_balance"
+                app:labelIconColor="@color/app_black"
+                app:labelIconSize="14"
+                app:showUnderline="false"
+                app:textColor="@color/light_red" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginStart="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sp.xwjlibrary.widget.IconEditClearView
+                android:id="@+id/iecv_can_withdraw_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                app:focus="false"
+                app:inputBottomSpace="15dp"
+                app:inputLeftSpace="40dp"
+                app:labelIcon="@string/can_withdraw_money"
+                app:labelIconColor="@color/app_black"
+                app:labelIconSize="14"
+                app:showUnderline="false"
+                app:textColor="@color/light_red" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginStart="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sp.xwjlibrary.widget.IconEditClearView
+                android:id="@+id/iecv_surplus_play_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                app:focus="false"
+                app:inputBottomSpace="15dp"
+                app:inputLeftSpace="40dp"
+                app:inputType="filter"
+                app:labelIcon="@string/surplus_play_code"
+                app:labelIconColor="@color/app_black"
+                app:labelIconSize="14"
+                app:showUnderline="false"
+                app:textColor="@color/light_red" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginStart="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="40dp"
+                android:text="@string/withdraw_account"
+                android:textColor="@color/app_black" />
+
+            <ImageView
+                android:id="@+id/iv_bank_logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:padding="2dp" />
+
+            <LinearLayout
+                android:id="@+id/lly_sel_bank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_bank_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333" />
+
+                <TextView
+                    android:id="@+id/tv_tail_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow_right_gray" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginStart="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.sp.xwjlibrary.widget.IconEditClearView
+                android:id="@+id/iecv_withdraw_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                app:clearIcon="@string/icon_clear"
+                app:hint="@string/input_withdraw_money_hint"
+                app:inputBottomSpace="15dp"
+                app:inputLeftSpace="40dp"
+                app:inputType="number"
+                app:labelIcon="@string/withdraw_money"
+                app:labelIconColor="@color/app_black"
+                app:labelIconSize="14"
+                app:showUnderline="false"
+                app:textSize="12" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginStart="20dp" />
+
+        <com.sp.xwjlibrary.widget.IconEditClearView
+            android:id="@+id/iecv_security_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:clearIcon="@string/icon_clear"
+            app:filterChars="0123456789"
+            app:hint="请输入您的安全密码"
+            app:inputBottomSpace="15dp"
+            app:inputLeftSpace="40dp"
+            app:inputType="filterPsw"
+            app:labelIcon="@string/security_psw"
+            app:labelIconColor="@color/app_black"
+            app:labelIconSize="14"
+            app:maxLength="6"
+            app:showUnderline="false"
+            app:textSize="12" />
+
+    </LinearLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_login"
+        android:text="@string/sure"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_saft_psw_hint"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/withdraw_hint"
+            android:textColor="@color/light_red" />
+
+    </LinearLayout>
+
+</LinearLayout>

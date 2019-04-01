@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:checkedButton="@id/rb_today"
+        android:divider="@drawable/divide_space_dm15"
+        android:orientation="horizontal"
+        android:showDividers="beginning|middle|end">
+
+        <RadioButton
+            android:id="@+id/rb_today"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/today" />
+
+        <RadioButton
+            android:id="@+id/rb_yesterday"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/yesterday" />
+
+        <RadioButton
+            android:id="@+id/rb_seven_days"
+            style="@style/rb_menu_agent_report_forms"
+            android:text="@string/seven_days" />
+
+        <RadioButton
+            style="@style/rb_menu_agent_report_forms"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="invisible" />
+
+    </RadioGroup>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checkedButton="@id/rb_all_lottery"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_recharge_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divide_space_dm15"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end">
+
+            <RadioButton
+                android:id="@+id/rb_all_lottery"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="0"
+                android:text="@string/all" />
+
+            <RadioButton
+                android:id="@+id/rb_recharging"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="1"
+                android:text="@string/recharging" />
+
+            <RadioButton
+                android:id="@+id/rb_recharge_success"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="2"
+                android:text="@string/recharge_success" />
+
+            <RadioButton
+                android:id="@+id/rb_recharge_fail"
+                style="@style/rb_menu_agent_report_forms"
+                android:tag="3"
+                android:text="@string/recharge_fail" />
+
+        </RadioGroup>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selector_login"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:text="@string/sure"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

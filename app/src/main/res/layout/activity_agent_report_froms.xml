@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.agentcenter.AgentReportFormsActivity">
+
+    <include layout="@layout/layout_rg_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/lly_subordinate_bet_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp">
+
+            <com.sp.xwjlibrary.widget.IconEditClearView
+                android:id="@+id/iecv_search_key"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/whitebg_grayside_r5"
+                android:paddingStart="13dp"
+                app:clearIcon="@string/icon_clear"
+                app:hint="@string/input_subordinate_agent_account"
+                app:inputBottomSpace="8dp"
+                app:inputLeftSpace="8dp"
+                app:labelIcon="@string/icon_search"
+                app:showUnderline="false" />
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bluebg_r5"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/search"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fly_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

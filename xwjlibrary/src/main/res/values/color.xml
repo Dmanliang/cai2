@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divide">#dddddd</color>
+    <color name="dialog_blue">#0094FE</color>
+    <color name="dialog_gray">#E3E3E3</color>
+    <color name="step_view">#FF7125</color>
+
+    <color name="water_blue">#00B4FF</color>
+    <color name="sky_blue">#0080ff</color>
+    <color name="medium_blue">#0000CD</color>
+    <color name="light_blue">#02A1EA</color>
+    <color name="orange_yellow">#FFB627</color>
+    <color name="dark_green">#09A844</color>
+    <color name="cyan">#5AC878</color>
+    <color name="light_cyan">#1afa29</color>
+    <color name="light_pink">#FFB6C1</color>
+    <color name="deep_pink">#FF1493</color>
+    <color name="orange">#FFA500</color>
+    <color name="purple">#800080</color>
+    <color name="purple_red">#FF34B3</color>
+    <color name="light_red">#EE745F</color>
+    <color name="dark_red">#AE2127</color>
+    <color name="rose_red">#FE007F</color>
+    <color name="red">#ff0000</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="text_def_gray">#757575</color>
+    <color name="theme_def_gray">#F5F5F5</color>
+    <color name="textBlackColor">#171717</color>
+    <color name="textGrayColor">#BDBDBD</color>
+    <color name="boxGrayColor">#dfdfdf</color>
+
+    <!--16进制色值-->
+    <string name="letter_index_sel">#FF7125</string>
+    <string name="text_def_gray">#757575</string>
+</resources>
